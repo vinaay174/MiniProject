@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Clock</title>
+    <style>
+      .container{
+        margin: 15px;
+        border: 15px solid rgb(209, 143, 0);
+        padding: 50px ;
+      }
+      #time{
+        color: rgb(218, 105, 0);
+        font-style: italic;
+        
+      }
+    </style>
+    <script src='index.js'></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.js"> Time </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Project1.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html"> About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html"> Contact </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Countries Time
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="Project1.html">India</a></li>
+                  <li><a class="dropdown-item" onclick="changeTimezone()" href="#">USA</a></li>
+                  <li><a class="dropdown-item" href="#">England</a></li>
+                  <li><a class="dropdown-item" href="#">Russia</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container my-4">
+        <div class="jumbotron">
+            <h2 class="display-5"><b>Present Time Is:</b>  <span id = "time"></span></h2>
+            <p class="lead">Time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, into the future.
+              Time is one of the seven fundamental physical quantities in both the International System of Units (SI) and International System of Quantities.
+              The SI base unit of time is the second </p>
+            <hr class="my-4">
+            <p>Here ,we show you the Time of different Countries</p>
+            <a class="btn btn-success btn-lg" href="#" role="button">Browse Times</a>
+          </div>
+      </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <p class="text-center"><b>The Time Of India</b></p>
+  </body>
+</html>
